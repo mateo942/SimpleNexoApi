@@ -14,7 +14,7 @@
     <RootNamespace>Nexo</RootNamespace>
     <AssemblyName>Nexo</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
-    <UseIISExpress>true</UseIISExpress>
+    <UseIISExpress>false</UseIISExpress>
     <Use64BitIISExpress />
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
@@ -44,35 +44,35 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="InsERT.Moria.API">
-      <HintPath>C:\Users\Mateusz\Desktop\nexoSDK_28.0.0.3263\Bin\InsERT.Moria.API.dll</HintPath>
+      <HintPath>C:\Users\m.piatek\Desktop\1\nexoSDK_28.0.0.3263\Bin\InsERT.Moria.API.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="InsERT.Moria.BibliotekaDokumentow">
-      <HintPath>C:\Users\Mateusz\Desktop\nexoSDK_28.0.0.3263\Bin\InsERT.Moria.BibliotekaDokumentow.dll</HintPath>
+      <HintPath>C:\Users\m.piatek\Desktop\1\nexoSDK_28.0.0.3263\Bin\InsERT.Moria.BibliotekaDokumentow.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="InsERT.Moria.DaneDomyslne">
-      <HintPath>C:\Users\Mateusz\Desktop\nexoSDK_28.0.0.3263\Bin\InsERT.Moria.DaneDomyslne.dll</HintPath>
+      <HintPath>C:\Users\m.piatek\Desktop\1\nexoSDK_28.0.0.3263\Bin\InsERT.Moria.DaneDomyslne.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="InsERT.Moria.ModelDanych">
-      <HintPath>C:\Users\Mateusz\Desktop\nexoSDK_28.0.0.3263\Bin\InsERT.Moria.ModelDanych.dll</HintPath>
+      <HintPath>C:\Users\m.piatek\Desktop\1\nexoSDK_28.0.0.3263\Bin\InsERT.Moria.ModelDanych.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="InsERT.Moria.Sfera">
-      <HintPath>C:\Users\Mateusz\Desktop\nexoSDK_28.0.0.3263\Bin\InsERT.Moria.Sfera.dll</HintPath>
+      <HintPath>C:\Users\m.piatek\Desktop\1\nexoSDK_28.0.0.3263\Bin\InsERT.Moria.Sfera.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="InsERT.Mox.Core">
-      <HintPath>C:\Users\Mateusz\Desktop\nexoSDK_28.0.0.3263\Bin\InsERT.Mox.Core.dll</HintPath>
+      <HintPath>C:\Users\m.piatek\Desktop\1\nexoSDK_28.0.0.3263\Bin\InsERT.Mox.Core.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="InsERT.Mox.EntityFramework.Core">
-      <HintPath>C:\Users\Mateusz\Desktop\nexoSDK_28.0.0.3263\Bin\InsERT.Mox.EntityFramework.Core.dll</HintPath>
+      <HintPath>C:\Users\m.piatek\Desktop\1\nexoSDK_28.0.0.3263\Bin\InsERT.Mox.EntityFramework.Core.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="InsERT.Mox.EntityFrameworkSupport">
-      <HintPath>C:\Users\Mateusz\Desktop\nexoSDK_28.0.0.3263\Bin\InsERT.Mox.EntityFrameworkSupport.dll</HintPath>
+      <HintPath>C:\Users\m.piatek\Desktop\1\nexoSDK_28.0.0.3263\Bin\InsERT.Mox.EntityFrameworkSupport.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
@@ -121,6 +121,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="NexoWrapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -167,16 +168,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
-          <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>64264</DevelopmentServerPort>
-          <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:64264/</IISUrl>
-          <NTLMAuthentication>False</NTLMAuthentication>
-          <UseCustomServer>False</UseCustomServer>
-          <CustomServerUrl>
-          </CustomServerUrl>
-          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+          <SaveServerSettingsInUserFile>True</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
     </VisualStudio>

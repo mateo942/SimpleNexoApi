@@ -12,7 +12,7 @@ namespace Nexo.Controllers
         [HttpGet]
         public IHttpActionResult GetList()
         {
-            var warehouseRepository = WebApiApplication.Uchwyt.PodajObiektTypu<IMagazyny>();
+            var warehouseRepository = NexoWrapper.Uchwyt.PodajObiektTypu<IMagazyny>();
 
             var results = warehouseRepository.Dane.Wszystkie().Select(x => x.Id);
 
